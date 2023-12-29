@@ -1,0 +1,58 @@
+header img {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 50px;
+}
+
+#logo {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#Coding {
+  background-color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  padding-top: 20px;
+  margin-top: 0;
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+#last-line {
+  padding-bottom: 20px;
+}
+
+#next {
+  text-align: center;
+  padding: 25px;
+}
+
+#next h1 {
+  color: white;
+}
+
+.plan {
+  padding-top: 0;
+}
+
+.plan-description {
+  margin-bottom: 40px;
+}
