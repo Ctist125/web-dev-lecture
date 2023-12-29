@@ -1,0 +1,39 @@
+body {
+  background-color: #f0edcc;
+  text-align: center;
+  margin: 50px;
+  color: #02343f;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+h1 {
+  background-color: #c2c2c2;
+  border-radius: 10px;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+p {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+a {
+  color: rgb(146, 146, 146);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #02343f;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#materials {
+  width: 356px;
+  height: 200px;
+}
