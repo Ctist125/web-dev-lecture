@@ -1,0 +1,19 @@
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.explain {
+  /*background image by.Unsplash의Steve Johnson*/
+  background-image: url(/img/ai.jpg);
+  justify-content: end;
+}
+
+.explain div {
+  background-color: rgba(61, 61, 61, 0.5);
+  padding: 50px;
+  border-radius: 25px;
+}
+
+footer {
+  background: linear-gradient(0, rgb(39, 39, 39), black);
+}

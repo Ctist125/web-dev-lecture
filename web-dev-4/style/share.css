@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  padding: 25px 200px;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+#logo a {
+  font-family: "Sevillana", serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+header li a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: rgb(230, 230, 230);
+  font-weight: 700;
+}
+
+header li a:hover {
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+}
+
+.select {
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+}
+
+main {
+  border-bottom: 1px solid white;
+}
+
+.explain {
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 950px;
+  display: flex;
+  align-items: center;
+}
+
+.explain div {
+  width: 40%;
+  margin: 0 5%;
+}
+
+.explain ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.explain h1 {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.explain h2 {
+  font-size: 30px;
+}
+
+.explain a {
+  text-decoration: none;
+  background-color: yellow;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: black;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.explain a:hover {
+  background-color: rgb(201, 201, 0);
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  padding: 20px 0;
+  font-weight: 700;
+  color: white;
+}

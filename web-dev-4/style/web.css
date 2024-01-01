@@ -1,0 +1,13 @@
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.explain {
+  /*background image by.Unsplash의Markus Winkler*/
+  background-image: url(/img/web.jpg);
+  justify-content: end;
+}
+
+footer {
+  background: linear-gradient(180deg, rgb(131, 216, 255), rgb(174, 228, 253));
+}

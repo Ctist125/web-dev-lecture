@@ -1,0 +1,20 @@
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.explain {
+  /*background image by.Unsplash의Steve Johnson*/
+  background-image: url(/img/software.jpg);
+  justify-content: center;
+}
+
+.explain div {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 2px 4px 8px rgb(0, 0, 0);
+}
+
+footer {
+  background: linear-gradient(0, rgb(97, 70, 70), rgb(49, 27, 27));
+}
