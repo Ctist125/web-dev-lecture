@@ -1,0 +1,42 @@
+#hook {
+  background-image: url(/img/main-background.jpg);
+  height: 840px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+#hook-item {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 0;
+  border-radius: 10px;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+#hook-item h1 {
+  font-size: 75px;
+  font-weight: 800;
+  margin: 0 0 0 25px;
+}
+
+#hook-item h2 {
+  font-weight: 50px;
+}
+
+#hook-item a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 7.5px;
+  display: inline-block;
+  font-weight: 700;
+}
+
+#hook-item a:hover {
+  background-color: rgb(124, 124, 124);
+}
