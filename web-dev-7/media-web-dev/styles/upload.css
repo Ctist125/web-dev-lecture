@@ -1,0 +1,93 @@
+#vedio-upload {
+  background-color: rgb(194, 194, 194);
+  margin: 2.5rem 5rem;
+  padding: 15rem;
+  border-radius: 1rem;
+}
+
+#vedio-upload:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+#border p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5rem solid black;
+  border-radius: 6rem;
+  font-size: 10rem;
+  margin: 0 auto;
+  width: 11rem;
+  height: 11rem;
+}
+
+#vedio-information {
+  margin: 2.5rem 7.5rem;
+}
+
+#vedio-information ul {
+  list-style: none;
+  padding: 0;
+}
+
+#vedio-information p {
+  color: rgb(194, 194, 194);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+}
+
+#uploading-bar div {
+  display: flex;
+}
+
+#progress {
+  display: inline-block;
+  background-color: #317773;
+  width: 60%;
+  height: 1rem;
+}
+
+#blank {
+  display: inline-block;
+  background-color: rgb(194, 194, 194);
+  width: 40%;
+  height: 1rem;
+}
+
+#uploading-bar p {
+  color: rgb(60, 60, 60);
+  box-shadow: none;
+  padding: 0;
+}
+
+#upload {
+  text-align: center;
+}
+
+#upload a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #317773;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+#upload a:hover {
+  background-color: #1f5754;
+}
+
+@media (max-width: 64rem) {
+  #vedio-upload {
+    padding: 10rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  #vedio-upload {
+    padding: 5rem;
+  }
+}

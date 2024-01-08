@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!--play icon by.Webalys-->
+    <link rel="icon" href="/img/icon/favicon.ico" type="image/x-icon" />
+
+    <!--Lemon font by.Eduardo Tunni-->
+    <!--Nanum Gothic font by.Sandoll Communication-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemon&family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles/share.css" />
+    <link rel="stylesheet" href="/styles/upload.css" />
+    <title>Uploading vedio</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" id="logo">Media platform</a>
+      <nav>
+        <ul>
+          <li>
+            <a href="upload.html" id="select">Upload</a>
+          </li>
+          <li>
+            <a href="#full-menu">Menu</a>
+          </li>
+          <li>
+            <a href="login.html">Login</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#full-menu" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </header>
+
+    <aside id="full-menu">
+      <a href="#">&#x2192</a>
+      <nav>
+        <ul>
+          <li>Setting</li>
+          <li>Language</li>
+          <li>Help</li>
+          <li>Information</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <section id="vedio-upload">
+        <div id="border">
+          <p>+</p>
+        </div>
+      </section>
+
+      <section id="vedio-information">
+        <ul>
+          <li>
+            <h3>제목</h3>
+            <p>5~20자 사이에 해당하도록 작성해 주십시오.</p>
+          </li>
+          <li>
+            <h3>설명</h3>
+            <p>500자 이하로 설명을 작성해 주십시오.</p>
+          </li>
+          <li>
+            <h3>분류</h3>
+            <p>영상의 분류를 작성해 주십시오.</p>
+          </li>
+          <li id="uploading-bar">
+            <h3>업로드 진행 상태</h3>
+            <div id="bar">
+              <span id="progress"></span>
+              <span id="blank"></span>
+            </div>
+          </li>
+          <li id="upload">
+            <a href="">Upload</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>현재 운영하지 않는 사이트 입니다.</p>
+    </footer>
+  </body>
+</html>
