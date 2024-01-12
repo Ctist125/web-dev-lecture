@@ -1,0 +1,63 @@
+body {
+  margin: 10rem 0;
+}
+
+section {
+  text-align: center;
+  padding: 1rem;
+}
+
+#login li {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  margin: 1rem;
+}
+
+label {
+  text-align: center;
+}
+
+input {
+  box-sizing: border-box;
+  font: 1.25rem "Nanum Gothic", sans-serif;
+  padding: 0.25rem;
+  border: 1px solid var(--color-gray-400);
+  border-radius: 0.25rem;
+}
+
+input:focus {
+  background-color: var(--color-brown-300);
+}
+
+button {
+  cursor: pointer;
+  color: white;
+  background-color: var(--color-brown-500);
+  font: 700 1.25rem "Nanum Gothic", sans-serif;
+  padding: 0.75rem 5rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: var(--color-brown-600);
+}
+
+#help {
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+  margin: 0 auto;
+}
+
+#help a {
+  text-decoration: none;
+  color: var(--color-gray-700);
+  padding: 0 1rem;
+}
+
+#help a:hover {
+  text-decoration: underline;
+}

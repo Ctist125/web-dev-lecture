@@ -1,0 +1,107 @@
+form {
+  width: 40rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+h3 {
+  color: var(--color-brown-500);
+}
+
+li {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  margin-bottom: 1rem;
+}
+
+input,
+textarea,
+select {
+  box-sizing: border-box;
+  font: 1rem "Nanum Gothic", sans-serif;
+  padding: 0.25rem;
+  border: 1px solid var(--color-gray-400);
+  border-radius: 0.25rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: var(--color-brown-300);
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+}
+
+.added-btn {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+}
+
+.added-btn button {
+  cursor: pointer;
+  font: inherit;
+  background-color: var(--color-brown-500);
+  border: 1px solid var(--color-gray-400);
+  border-radius: 0.25rem;
+  color: white;
+  margin-left: 0.5rem;
+}
+
+.added-btn button:hover {
+  background-color: var(--color-brown-600);
+}
+
+.long-text {
+  display: block;
+}
+
+.long-text label {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.long-text select {
+  width: 100%;
+}
+
+#gender-radio {
+  display: block;
+}
+
+#gender-radio li {
+  display: inline-block;
+  margin: 0;
+}
+
+#terms {
+  margin: 1rem 0;
+}
+
+#terms input {
+  margin: 0;
+}
+
+#btn {
+  text-align: center;
+}
+
+#btn button {
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  background-color: var(--color-brown-500);
+  color: white;
+  border: 1px solid var(--color-gray-400);
+  border-radius: 0.25rem;
+  padding: 0.5rem 3rem;
+}
+
+#btn button:hover {
+  background-color: var(--color-brown-600);
+}
