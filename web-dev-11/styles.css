@@ -1,0 +1,98 @@
+html {
+  --color-gray-100: #e9e9e9;
+  --color-gray-300: #bdbdbd;
+  --color-gray-500: #696969;
+  --color-gray-700: #464646;
+  --color-gray-800: rgb(36, 36, 36);
+
+  font-family: "Nanum Myeongjo", serif;
+  color: white;
+  background-color: var(--color-gray-100);
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  width: 10rem;
+}
+
+main {
+  text-align: center;
+  background-color: var(--color-gray-500);
+  border-radius: 0.5rem;
+  width: 50rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+main h1 {
+  font-weight: 800;
+}
+
+main ul {
+  list-style: none;
+  padding: 0;
+}
+
+main li {
+  text-align: left;
+}
+main li p {
+  text-align: right;
+}
+
+main label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+main input,
+main textarea {
+  font: 700 1.5rem "Nanum gothic", sans-serif;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid var(--color-gray-700);
+  border-radius: 0.25rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.25rem;
+}
+
+main input:focus,
+main textarea:focus {
+  border-color: var(--color-gray-800);
+}
+
+main textarea {
+  resize: none;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+button {
+  color: white;
+  background-color: var(--color-gray-300);
+  border: 1px solid var(--color-gray-700);
+  border-radius: 0.25rem;
+  font: 700 1rem "Nanum Myeongjo", serif;
+  padding: 0.5rem 3rem;
+}
+
+.enable {
+  cursor: pointer;
+  background-color: var(--color-gray-800);
+  border-color: var(--color-gray-800);
+}
+
+.enable:hover {
+  background-color: var(--color-gray-700);
+}
+
+footer {
+  text-align: center;
+  color: var(--color-gray-800);
+  font-weight: 700;
+}
