@@ -1,0 +1,150 @@
+header {
+  margin: 10rem 0 2rem 0;
+}
+
+#login {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 2rem;
+  width: 46rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+#border-line {
+  border: 3px solid var(--color-gray-700);
+  border-radius: 2rem;
+}
+
+.hide-login-contents {
+  display: none;
+}
+
+#login h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 2.5rem 0 2rem 0;
+}
+
+#login form {
+  text-align: center;
+}
+
+#login ul {
+  list-style: none;
+  margin: 0 0 2rem 0;
+  padding: 0;
+}
+
+#login li {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+#login input {
+  color: var(--color-gray-700);
+  font: 400 1.25rem "Nanum Gothic", sans-serif;
+  padding: 0.25rem;
+  border: 2px solid var(--color-gray-700);
+  border-radius: 0.4rem;
+  width: 50%;
+}
+
+#login input:focus {
+  background-color: var(--color-gray-100);
+}
+
+#login-failure-count span {
+  color: red;
+}
+
+#login button {
+  color: white;
+  cursor: pointer;
+  background-color: var(--color-gray-700);
+  border: 1px solid var(--color-gray-700);
+  border-radius: 0.5rem;
+  font: 700 1.5rem "Nanum Gothic", sans-serif;
+  margin-bottom: 2.5rem;
+  padding: 0.75rem 4rem;
+}
+
+#login button:hover {
+  background-color: var(--color-gray-600);
+}
+
+.lock {
+  display: none;
+  border: 3px solid var(--color-gray-700);
+  border-radius: 2rem;
+}
+
+.lock p {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.run-lockdown {
+  display: block;
+  border: 3px solid var(--color-gray-700);
+  border-radius: 2rem;
+}
+
+.run-lockdown p {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.before-login {
+  display: none;
+  border: 3px solid var(--color-gray-700);
+  border-radius: 2rem;
+}
+
+.after-login {
+  display: block;
+  border: 3px solid var(--color-gray-700);
+  border-radius: 2rem;
+}
+
+#waiting-connection ul {
+  margin: 2.5rem 0;
+}
+
+#waiting-connection a {
+  background-color: var(--color-gray-700);
+  color: white;
+  text-decoration: none;
+  border: 1px solid var(--color-gray-700);
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 1rem 5rem;
+}
+
+#waiting-connection a:hover {
+  background-color: var(--color-gray-600);
+}
+
+#user-management {
+  width: 40rem;
+  margin: 0 auto;
+}
+
+#user-management ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+#user-management a {
+  color: white;
+  text-decoration: none;
+}
+
+#user-management a:hover {
+  text-decoration: underline;
+}

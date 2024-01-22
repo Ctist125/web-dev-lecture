@@ -1,0 +1,102 @@
+header {
+  background: white;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-gray-700);
+}
+
+#header-size {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#header-size a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-gray-700);
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+#header-size img {
+  width: 5rem;
+  padding-right: 1rem;
+}
+
+#header-size ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+#header-size li {
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+main {
+  text-align: center;
+}
+
+form input {
+  font: 400 1.25rem "Nanum Gothic", sans-serif;
+  padding: 0.25rem;
+  border: 1px solid var(--color-gray-700);
+  border-radius: 0.5rem;
+}
+
+form button {
+  background-color: white;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid var(--color-gray-700);
+  border-radius: 0.75rem;
+  padding: 0.5rem 1.5rem;
+}
+
+form button:hover {
+  background-color: var(--color-gray-100);
+}
+
+main div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main img {
+  width: 7.5rem;
+}
+
+main p {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#dealer-result {
+  margin: 6rem 5rem;
+}
+
+#my-result {
+  margin: 6rem 6rem;
+}
+
+footer {
+  background-color: white;
+  border-top: 1px solid var(--color-gray-700);
+  margin-top: 1rem;
+}
+
+footer p {
+  color: var(--color-gray-700);
+  font-weight: 800;
+  margin: 0;
+  padding: 2.25rem 0;
+}

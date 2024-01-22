@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Nanum Gothic font by.Sandoll Communication-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Dice icon by.Vezok-->
+    <link rel="icon" href="/img/icon/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/styles/share.css" />
+    <link rel="stylesheet" href="/styles/game-play.css" />
+
+    <script src="/script/user-data.js" defer></script>
+    <script src="/script/game-play.js" defer></script>
+
+    <title>Play</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="header-size">
+        <a href="index.html">
+          <img src="/img/icon/dice.png" alt="Dice game Logo" />
+          Dice Game
+        </a>
+        <ul>
+          <li id="user-name">Username 님</li>
+          <li id="user-money">0 원</li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section id="play">
+        <div id="dealer-profile">
+          <!--People image by.Hopnguyen Mr-->
+          <img src="/img/icon/dealer.png" alt="Dealer image" />
+          <p>Dealer <span>0</span> 원</p>
+        </div>
+
+        <p id="dealer-result">
+          공용: <span id="common"></span>, Dealer: <span id="dealer"></span>
+        </p>
+
+        <form>
+          <input
+            type="text"
+            name="batting-money"
+            id="batting-money"
+            min="1"
+            max="10000"
+            required
+          />
+          <button type="button">주사위 굴리기</button>
+        </form>
+
+        <p id="my-result">
+          공용: <span id="common"></span>, My: <span id="my"></span>
+        </p>
+
+        <div id="my-profile">
+          <!--People image2 by.Hopnguyen Mr-->
+          <img src="/img/icon/my-profile.png" alt="My profile image" />
+          <p>My money <span>0</span> 원</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>2024년 01월 21일 제작</p>
+    </footer>
+  </body>
+</html>
