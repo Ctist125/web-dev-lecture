@@ -1,0 +1,21 @@
+html {
+  --color-gray-100: rgb(247, 247, 247);
+  --color-gray-400: rgb(173, 173, 173);
+  --color-gray-700: rgb(60, 60, 60);
+
+  --color-orange-400: #f2aa4c;
+  --color-orange-500: #db9539;
+
+  font-family: "Nanum Gothic", sans-serif;
+  color: var(--color-orange-400);
+}
+
+header h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+footer {
+  text-align: center;
+}

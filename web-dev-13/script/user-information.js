@@ -1,0 +1,38 @@
+let userInformation = [
+  {
+    registerId: "admin",
+    registerPassword: "admin",
+    registerNickname: "admin",
+    userName: "tief",
+    userEmail: "tief@milogo.com",
+    userPhonenumber: "010-1234-5678",
+    userGender: "man",
+  },
+  {
+    registerId: "admin1",
+    registerPassword: "admin1",
+    registerNickname: "admin1",
+    userName: "tief",
+    userEmail: "tief@milogo.com",
+    userPhonenumber: "010-1234-5678",
+    userGender: "man",
+  },
+  {
+    registerId: "admin2",
+    registerPassword: "admin2",
+    registerNickname: "admin2",
+    userName: "tief",
+    userEmail: "tief@milogo.com",
+    userPhonenumber: "010-1234-5678",
+    userGender: "man",
+  },
+  {
+    registerId: "",
+    registerPassword: "",
+    registerNickname: "",
+    userName: "",
+    userEmail: "",
+    userPhonenumber: "",
+    userGender: "",
+  },
+];

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Nanum Gothic font by.Sandoll Communication-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Hexagon Icon by.Feather Icons-->
+    <link rel="icon" href="/img/icon/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/styles/share.css" />
+    <link rel="stylesheet" href="/styles/register.css" />
+
+    <script src="/script/user-information.js" defer></script>
+    <script src="/script/function.js" defer></script>
+    <script src="/script/register.js" defer></script>
+
+    <title>회원가입</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>회원가입</h1>
+    </header>
+
+    <main>
+      <form>
+        <section id="register-data">
+          <h2>회원가입 정보</h2>
+          <ul>
+            <li class="check-duplication">
+              <label for="register-id">ID</label>
+              <input
+                type="text"
+                name="registerId"
+                id="register-id"
+                placeholder="ID"
+                required
+              />
+              <button type="button" id="id-check">중복 확인</button>
+              <p id="error-id"></p>
+            </li>
+            <li class="basic-input">
+              <label for="register-password">비밀번호</label>
+              <input
+                type="password"
+                name="registerPassword"
+                id="register-password"
+                placeholder="Password"
+                required
+              />
+              <p id="error-password"></p>
+            </li>
+            <li class="basic-input">
+              <label for="">비밀번호 확인</label>
+              <input
+                type="password"
+                name="register-password-check"
+                id="register-password-check"
+                placeholder="Password 확인"
+                required
+              />
+            </li>
+            <li class="check-duplication">
+              <label for="register-nickname">닉네임</label>
+              <input
+                type="text"
+                name="registerNickname"
+                id="register-nickname"
+                placeholder="닉네임"
+                required
+              />
+              <button type="button" id="nickname-check">중복 확인</button>
+              <p id="error-nickname"></p>
+            </li>
+          </ul>
+        </section>
+
+        <hr />
+
+        <section id="user-data">
+          <h2>사용자 정보</h2>
+          <ul>
+            <li class="basic-input">
+              <label for="userName">이름</label>
+              <input
+                type="text"
+                name="userName"
+                id="user-name"
+                placeholder="이름"
+                required
+              />
+            </li>
+            <li class="basic-input">
+              <label for="userEmail">이메일</label>
+              <input
+                type="email"
+                name="userEmail"
+                id="user-email"
+                placeholder="useremail@example.com"
+                required
+              />
+            </li>
+            <li class="basic-input">
+              <label for="userPhonenumber">전화번호</label>
+              <input
+                type="tel"
+                name="userPhonenumber"
+                id="user-phonenumber"
+                placeholder="010-0000-0000"
+                required
+              />
+            </li>
+            <li class="basic-input">
+              <label for="">성별</label>
+              <span>
+                <input
+                  type="radio"
+                  name="userGender"
+                  id="gender-man"
+                  value="man"
+                  required
+                />
+                <label for="gender-man">남</label>
+                <input
+                  type="radio"
+                  name="userGender"
+                  id="gender-woman"
+                  value="woman"
+                  required
+                />
+                <label for="gender-woman">여</label>
+              </span>
+            </li>
+            <hr />
+            <li>
+              <input
+                type="checkbox"
+                name="agree"
+                id="agree"
+                value="agree"
+                required
+              />
+              <label for="agree">약관에 동의합니다.</label>
+            </li>
+          </ul>
+        </section>
+
+        <section id="btn">
+          <button type="reset">Reset</button>
+          <button type="submit" id="submit-button">가입</button>
+        </section>
+      </form>
+    </main>
+  </body>
+
+  <footer>
+    <p>2024년 1월 24일 제작</p>
+  </footer>
+</html>
