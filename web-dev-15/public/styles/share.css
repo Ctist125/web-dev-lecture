@@ -1,0 +1,97 @@
+html {
+  --color-gray-200: rgb(226, 226, 226);
+  --color-gray-700: rgb(60, 60, 60);
+
+  --color-blue-200: #8893ce;
+  --color-blue-400: #45508d;
+  --color-blue-500: #333d79;
+
+  font-family: "Nanum Gothic", sans-serif;
+  color: var(--color-gray-700);
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  padding: 1rem 0;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+#header-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#header-item a {
+  display: flex;
+  align-items: center;
+  color: var(--color-blue-500);
+  text-decoration: none;
+}
+
+#logo {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+#logo img {
+  width: 5rem;
+}
+
+#top-menu ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+#top-menu li {
+  text-align: center;
+}
+
+#top-menu a {
+  display: inline-block;
+  width: 5rem;
+  padding: 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+}
+
+#top-menu a:hover {
+  background-color: var(--color-blue-500);
+  color: white;
+}
+
+#tablet-menu {
+  display: none;
+  align-items: center;
+}
+
+#tablet-menu span {
+  display: block;
+  background-color: var(--color-blue-500);
+  width: 2rem;
+  height: 0.3rem;
+  margin: 0 auto;
+}
+
+#middle-bar {
+  margin: 0.5rem auto !important;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid black;
+  font-size: 1.25rem;
+}

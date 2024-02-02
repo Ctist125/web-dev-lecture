@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--World icon by.Aaron Jin-->
+    <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon" />
+
+    <!--Nanum Gothic font by.Sandoll Communication-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/share.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <title>Community</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="header-item">
+        <div id="logo">
+          <a href="/">
+            <img src="images/icons/world-icon.png" alt="Community logo" />
+            Community
+          </a>
+        </div>
+        <nav id="top-menu">
+          <ul>
+            <li>
+              <a href="#">공지</a>
+            </li>
+            <li>
+              <a href="#">알림</a>
+            </li>
+            <li>
+              <a href="#">로그인</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="post">
+        <h1>게시글</h1>
+        <ul>
+          <li>순번</li>
+          <li>제목</li>
+          <li>작성자</li>
+          <li>업로드 날짜</li>
+        </ul>
+        <hr />
+        <ol>
+          <% for (const post of posts) { %>
+            <li>
+              <p>1.</p>
+              <a href="/post-content" id="content-title"><%= post.title %></a>
+              <p>tief</p>
+              <p>2024/02/02</p>
+            </li>
+          <% } %>
+        </ol>
+        <hr />
+      </section>
+
+      <section id="move-btn">
+        <span></span>
+        <div>
+          <button><</button>
+          <p>1/5</p>
+          <button>></button>
+        </div>
+        <a href="/posting">글쓰기</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>2024년 2월 1일 제작</p>
+    </footer>
+  </body>
+</html>
