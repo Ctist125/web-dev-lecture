@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <%- include("includes/head") %>
+    <link rel="stylesheet" href="/styles/non-landing-page.css" />
+    <link rel="stylesheet" href="/styles/review.css" />
+
+    <title>Review</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="header-item">
+        <a href="/" id="logo">
+          <!--Change the color of the icon.-->
+          <img src="/images/icons/food-icon.png" alt="Logo image" />
+          Italian food
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="/menu">Menu</a>
+            </li>
+            <li>
+              <a href="/review" id="select">Review</a>
+            </li>
+            <li>
+              <a href="/shopping-basket">Basket</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1>Review</h1>
+
+      <section id="review-item">
+        <ul id="review-type">
+          <li>
+            <p class="center-alignment">날짜</p>
+            <p class="center-alignment">음식</p>
+            <p>리뷰</p>
+          </li>
+        </ul>
+        <hr />
+        <ul>
+          <% for (const review of reviews) { %>
+            <li>
+              <a href="/review/<%= review.review %>">
+                <p class="center-alignment"><%= review.date %></p>
+                <p class="center-alignment"><%= review.menu %></p>
+                <p><%= review.review %></p>
+              </a>
+            </li>
+          <% } %>
+        </ul>
+        <hr />
+      </section>
+
+      <section id="page-btn">
+        <form>
+          <button type="submit"><</button>
+          <p>1/1</p>
+          <button type="submit">></button>
+        </form>
+      </section>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

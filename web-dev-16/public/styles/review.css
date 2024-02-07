@@ -1,0 +1,49 @@
+main ul {
+  list-style: none;
+  padding: 0;
+}
+
+#review-type li,
+main li a {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 8fr;
+  gap: 1rem;
+}
+
+main li a {
+  text-decoration: none;
+  color: var(--color-gray-700);
+}
+
+main li a:hover,
+main li a:active {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#review-type {
+  font-weight: 700;
+}
+
+#review-type p {
+  margin-bottom: 0;
+}
+
+.center-alignment {
+  text-align: center;
+}
+
+#page-btn form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-btn form button {
+  font: 400 0.75rem "Nanum Myeongjo", serif;
+}
+
+#page-btn form p {
+  padding: 0 0.5rem;
+}

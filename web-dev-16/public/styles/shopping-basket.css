@@ -1,0 +1,50 @@
+main ul {
+  list-style: none;
+}
+
+#basket-type {
+  font-weight: 700;
+}
+
+.element-alignment {
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+}
+
+.center-alignment {
+  text-align: center;
+}
+
+#payment {
+  display: flex;
+  justify-content: end;
+}
+
+#payment ul {
+  list-style: none;
+  padding: 0;
+}
+
+#payment li {
+  margin-bottom: 1rem;
+}
+
+#payment form {
+  text-align: center;
+}
+
+#payment button {
+  cursor: pointer;
+  color: white;
+  background-color: var(--color-orange-400);
+  border: 1px solid var(--color-orange-400);
+  border-radius: 0.25rem;
+  font: 400 1rem "Nanum Myeongjo", serif;
+  width: 10rem;
+  padding: 0.5rem 0;
+}
+
+#payment button:hover,
+#payment button:active {
+  background-color: var(--color-orange-500);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <%- include("includes/head") %>
+    <link rel="stylesheet" href="/styles/non-landing-page.css" />
+    <link rel="stylesheet" href="/styles/review-detail.css" />
+
+    <title>review Title</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="header-item">
+        <a href="/" id="logo">
+          <!--Change the color of the icon.-->
+          <img src="/images/icons/food-icon.png" alt="Logo image" />
+          Italian food
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="/menu">Menu</a>
+            </li>
+            <li>
+              <a href="/review">Review</a>
+            </li>
+            <li>
+              <a href="/shopping-basket">Basket</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1><%= review.nickname %>님의 Review</h1>
+      <ul>
+        <li>
+          <img
+            src="<%= review.imageLink %>"
+            alt="<%= review.menu %> image"
+          />
+        </li>
+        <li><%= review.review %></li>
+      </ul>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

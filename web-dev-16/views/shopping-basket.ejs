@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <%- include("includes/head") %>
+    <link rel="stylesheet" href="/styles/non-landing-page.css" />
+    <link rel="stylesheet" href="/styles/shopping-basket.css" />
+
+    <title>장바구니</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="header-item">
+        <a href="/" id="logo">
+          <!--Change the color of the icon.-->
+          <img src="/images/icons/food-icon.png" alt="Logo image" />
+          Italian food
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="/menu">Menu</a>
+            </li>
+            <li>
+              <a href="/review">Review</a>
+            </li>
+            <li>
+              <a href="/shopping-basket" id="select">Basket</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1>장바구니</h1>
+
+      <section id="list">
+        <ul id="basket-type" class="element-alignment">
+          <li>이름</li>
+          <li class="center-alignment">가격</li>
+        </ul>
+        <hr />
+        <ul>
+          <li class="element-alignment">
+            <p>토마토 파스타</p>
+            <p class="center-alignment">00,000 won</p>
+          </li>
+          <li class="element-alignment">
+            <p>토마토 파스타</p>
+            <p class="center-alignment">00,000 won</p>
+          </li>
+          <li class="element-alignment">
+            <p>토마토 파스타</p>
+            <p class="center-alignment">00,000 won</p>
+          </li>
+        </ul>
+        <hr />
+      </section>
+
+      <section id="payment">
+        <div>
+          <ul>
+            <li>상품금액: 00,000 won</li>
+            <li>할인: 00,000 won</li>
+          </ul>
+          <hr />
+          <h2>결제 금액: 00,000 won</h2>
+          <form>
+            <button type="button">장바구니 비우기</button>
+            <button type="submit">결제</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

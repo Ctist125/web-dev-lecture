@@ -1,0 +1,14 @@
+main ul {
+  list-style: none;
+  padding: 0;
+}
+
+main li {
+  font-size: 2rem;
+}
+
+main img {
+  width: 100%;
+  border-radius: 5rem;
+  margin-bottom: 5rem;
+}

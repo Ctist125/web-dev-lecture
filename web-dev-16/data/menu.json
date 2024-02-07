@@ -1,0 +1,142 @@
+[
+  {
+    "type": "pasta",
+    "menu": "토마토 파스타(Tomato pasta)",
+    "price": "10,500"
+  },
+  {
+    "type": "pasta",
+    "menu": "카르보나라(Carbonara)",
+    "price": "10,500"
+  },
+  {
+    "type": "pasta",
+    "menu": "매운 카르보나라(Carboanra)",
+    "price": "10,500"
+  },
+  {
+    "type": "pasta",
+    "menu": "봉골레 파스타(Pasta)",
+    "price": "10,500"
+  },
+  {
+    "type": "pasta",
+    "menu": "쉬림프 알리오올리오 파스타(Pasta)",
+    "price": "10,500"
+  },
+  {
+    "type": "pilaf",
+    "menu": "목살 필라프(Pilaf)",
+    "price": "10,500"
+  },
+  {
+    "type": "pilaf",
+    "menu": "불고기 필라프(Pilaf)",
+    "price": "10,500"
+  },
+  {
+    "type": "pilaf",
+    "menu": "새우 필라프(Shrimp pilaf)",
+    "price": "10,500"
+  },
+  {
+    "type": "pilaf",
+    "menu": "김치 필라프(Pilaf)",
+    "price": "10,500"
+  },
+  {
+    "type": "pilaf",
+    "menu": "베이컨 필라프(Pilaf)",
+    "price": "10,500"
+  },
+  {
+    "type": "risotto",
+    "menu": "새우 리소토(Shrimp risotto)",
+    "price": "10,500"
+  },
+  {
+    "type": "risotto",
+    "menu": "해물 크림 리소토(Cream risotto)",
+    "price": "10,500"
+  },
+  {
+    "type": "risotto",
+    "menu": "매운 크림 리소토(Cream risotto)",
+    "price": "10,500"
+  },
+  {
+    "type": "risotto",
+    "menu": "로제 리소토(Risotto)",
+    "price": "10,500"
+  },
+  {
+    "type": "risotto",
+    "menu": "베이컨 리소토(Risotto)",
+    "price": "10,500"
+  },
+  {
+    "type": "set-menu",
+    "menu": "1인 세트",
+    "price": "20,000"
+  },
+  {
+    "type": "set-menu",
+    "menu": "2인 세트",
+    "price": "30,000"
+  },
+  {
+    "type": "set-menu",
+    "menu": "3인 세트",
+    "price": "40,000"
+  },
+  {
+    "type": "set-menu",
+    "menu": "4인 세트",
+    "price": "50,000"
+  },
+  {
+    "type": "side",
+    "menu": "감자튀김",
+    "price": "2,000"
+  },
+  {
+    "type": "side",
+    "menu": "윙",
+    "price": "3,000"
+  },
+  {
+    "type": "side",
+    "menu": "봉",
+    "price": "3,000"
+  },
+  {
+    "type": "side",
+    "menu": "치즈볼",
+    "price": "4,000"
+  },
+  {
+    "type": "side",
+    "menu": "가라아게",
+    "price": "3,000"
+  },
+  {
+    "type": "beverage",
+    "menu": "콜라",
+    "price": "2,000"
+  },
+  {
+    "type": "beverage",
+    "menu": "제로 콜라",
+    "price": "2,000"
+  },
+  {
+    "type": "beverage",
+    "menu": "사이다",
+    "price": "2,000"
+  },
+  {
+    "type": "beverage",
+    "menu": "제로 사이다",
+    "price": "2,000"
+  }
+]

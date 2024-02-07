@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <%- include("includes/head") %>
+    <link rel="stylesheet" href="/styles/index.css" />
+
+    <title>Italian food</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="header-item">
+        <a href="/" id="logo">
+          <!--Change the color of the icon.-->
+          <img src="/images/icons/food-icon.png" alt="Logo image" />
+          Italian food
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="/menu">Menu</a>
+            </li>
+            <li>
+              <a href="/review">Review</a>
+            </li>
+            <li>
+              <a href="/shopping-basket">Basket</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="introduction">
+        <article>
+          <h1>Italian food</h1>
+          <ul>
+            <li>파스타(Pasta) 전문점</li>
+            <li>파스타(Pasta), 필라프(Pilaf)를 메인으로 요리하고 있습니다.</li>
+            <li>
+              <a href="/menu">Menu</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="best-review">
+        <div id="review-item">
+          <% for (const review of reviews) { %>
+            <% if (review.state === "choice") { %>
+              <div class="card">
+                <img
+                  src="<%= review.imageLink %>"
+                  alt="<%= review.menu %> image"
+                />
+                <article>
+                  <ul>
+                    <li>
+                      <h2><%= review.menu %></h2>
+                    </li>
+                    <li><%= review.review %></li>
+                  </ul>
+                  <ul>
+                    <li class="user-nickname"><%= review.nickname %></li>
+                    <li class="review-btn">
+                      <a href="/review/<%= review.review %>">바로가기</a>
+                    </li>
+                  </ul>
+                </article>
+              </div>
+            <% } %>
+          <% } %>
+        </div>
+      </section>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

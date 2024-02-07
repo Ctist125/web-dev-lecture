@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <%- include("includes/head") %>
+    <link rel="stylesheet" href="/styles/non-landing-page.css" />
+    <link rel="stylesheet" href="/styles/menu.css" />
+    <link rel="stylesheet" href="/styles/overlay.css" />
+
+    <title>Menu</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="header-item">
+        <a href="/" id="logo">
+          <!--Change the color of the icon.-->
+          <img src="/images/icons/food-icon.png" alt="Logo image" />
+          Italian food
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="/menu" id="select">Menu</a>
+            </li>
+            <li>
+              <a href="/review">Review</a>
+            </li>
+            <li>
+              <a href="/shopping-basket">Basket</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1>Menu</h1>
+
+      <form>
+        <div id="menu-item">
+          <section id="pasta">
+            <ul class="menu-type">
+              <li>
+                <h2>pasta</h2>
+              </li>
+              <li>
+                <p>이름</p>
+                <p class="price">가격</p>
+              </li>
+            </ul>
+            <hr />
+            <ul class="menu-list">
+              <% for (const menu of menus) { %>
+                <% if (menu.type === "pasta") { %>
+                  <li>
+                    <p><%= menu.menu %></p>
+                    <p class="price"><%= menu.price %> won</p>
+                    <button type="submit">담기</button>
+                  </li>
+                <% } %>
+              <% } %>
+            </ul>
+          </section>
+  
+          <section id="pilaf">
+            <ul class="menu-type">
+              <li>
+                <h2>pilaf</h2>
+              </li>
+              <li>
+                <p>이름</p>
+                <p class="price">가격</p>
+              </li>
+            </ul>
+            <hr />
+            <ul class="menu-list">
+              <% for (const menu of menus) { %>
+                <% if (menu.type === "pilaf") { %>
+                  <li>
+                    <p><%= menu.menu %></p>
+                    <p class="price"><%= menu.price %> won</p>
+                    <button type="submit">담기</button>
+                  </li>
+                <% } %>
+              <% } %>
+            </ul>
+          </section>
+  
+          <section id="risotto">
+            <ul class="menu-type">
+              <li>
+                <h2>risotto</h2>
+              </li>
+              <li>
+                <p>이름</p>
+                <p class="price">가격</p>
+              </li>
+            </ul>
+            <hr />
+            <ul class="menu-list">
+              <% for (const menu of menus) { %>
+                <% if (menu.type === "risotto") { %>
+                  <li>
+                    <p><%= menu.menu %></p>
+                    <p class="price"><%= menu.price %> won</p>
+                    <button type="submit">담기</button>
+                  </li>
+                <% } %>
+              <% } %>
+            </ul>
+          </section>
+  
+          <section id="set-menu">
+            <ul class="menu-type">
+              <li>
+                <h2>set-menu</h2>
+              </li>
+              <li>
+                <p>이름</p>
+                <p class="price">가격</p>
+              </li>
+            </ul>
+            <hr />
+            <ul class="menu-list">
+              <% for (const menu of menus) { %>
+                <% if (menu.type === "set-menu") { %>
+                  <li>
+                    <p><%= menu.menu %></p>
+                    <p class="price"><%= menu.price %> won</p>
+                    <button type="submit">담기</button>
+                  </li>
+                <% } %>
+              <% } %>
+            </ul>
+          </section>
+  
+          <section id="side">
+            <ul class="menu-type">
+              <li>
+                <h2>side</h2>
+              </li>
+              <li>
+                <p>이름</p>
+                <p class="price">가격</p>
+              </li>
+            </ul>
+            <hr />
+            <ul class="menu-list">
+              <% for (const menu of menus) { %>
+                <% if (menu.type === "side") { %>
+                  <li>
+                    <p><%= menu.menu %></p>
+                    <p class="price"><%= menu.price %> won</p>
+                    <button type="submit">담기</button>
+                  </li>
+                <% } %>
+              <% } %>
+            </ul>
+          </section>
+  
+          <section id="beverage">
+            <ul class="menu-type">
+              <li>
+                <h2>beverage</h2>
+              </li>
+              <li>
+                <p>이름</p>
+                <p class="price">가격</p>
+              </li>
+            </ul>
+            <hr />
+            <ul class="menu-list">
+              <% for (const menu of menus) { %>
+                <% if (menu.type === "beverage") { %>
+                  <li>
+                    <p><%= menu.menu %></p>
+                    <p class="price"><%= menu.price %> won</p>
+                    <button type="submit">담기</button>
+                  </li>
+                <% } %>
+              <% } %>
+            </ul>
+          </section>
+        </div>
+      </form>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

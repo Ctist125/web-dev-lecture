@@ -1,0 +1,82 @@
+[
+  {
+    "menu": "토마토 파스타(Tomato pasta)",
+    "review": "맛있게 잘 먹었습니다! 다음에도 주문할게요!!!",
+    "nickname": "꿀꿀이",
+    "imageLink": "/images/foods/tomato-pasta.jpg",
+    "state": "choice",
+    "date": "2024/02/05"
+  },
+  {
+    "menu": "카르보나라(Carbonara) 외 2",
+    "review": "배달이 조금 아쉽긴 한데, 음식은 맛있었습니다.",
+    "nickname": "파스타 마녀",
+    "imageLink": "/images/foods/carbonara-image.jpg",
+    "state": "choice",
+    "date": "2024/02/05"
+  },
+  {
+    "menu": "매운 카르보나라(Carboanra)",
+    "review": "맵기도 딱 정당해서 너무 좋은것 같아요. 잘 먹었습니다.",
+    "nickname": "수박",
+    "imageLink": "/images/foods/carbonara-image.jpg",
+    "state": "none",
+    "date": "2024/02/05"
+  },
+  {
+    "menu": "새우 리소토(Shrimp risotto) 외 1",
+    "review": "두번째 주문입니다. 너무 맛있네요!!",
+    "nickname": "I'm 도비",
+    "imageLink": "/images/foods/shrimp-risotto.jpg",
+    "state": "choice",
+    "date": "2024/02/04"
+  },
+  {
+    "menu": "목살 필라프(Pilaf) 외 3",
+    "review": "양이 정말 많아서 좋은것 같아요. 다음에 또 주문할께요~~",
+    "nickname": "샤크",
+    "imageLink": "/images/foods/shrimp-risotto.jpg",
+    "state": "none",
+    "date": "2024/02/04"
+  },
+  {
+    "menu": "불고기 필라프(Pilaf)",
+    "review": "맛있어요!!!",
+    "nickname": "냠냠",
+    "imageLink": "/images/foods/shrimp-risotto.jpg",
+    "state": "none",
+    "date": "2024/02/04"
+  },
+  {
+    "menu": "해물 크림 리소토(Cream risotto)",
+    "review": "만족스러운 점심이었습니다!!",
+    "nickname": "밥주세요",
+    "imageLink": "/images/foods/shrimp-risotto.jpg",
+    "state": "none",
+    "date": "2024/02/04"
+  },
+  {
+    "menu": "파스타 1인 세트 외 2",
+    "review": "가성비가 너무 좋은것 같아요. 다음에 지인과 함께 또 주문하겠습니다.",
+    "nickname": "우마이",
+    "imageLink": "/images/foods/tomato-pasta.jpg",
+    "state": "none",
+    "date": "2024/02/04"
+  },
+  {
+    "menu": "파스타 2인 세트 외 1",
+    "review": "맛있네용~",
+    "nickname": "오이",
+    "imageLink": "/images/foods/tomato-pasta.jpg",
+    "state": "none",
+    "date": "2024/02/04"
+  },
+  {
+    "menu": "매운 카르보나라(Carboanra)",
+    "review": "좀 맵기는한데 맛있게 맵네요. 매운거 잘 못드시는 분들은 주의해야 할 것 같네요!",
+    "nickname": "멍멍",
+    "imageLink": "/images/foods/carbonara-image.jpg",
+    "state": "none",
+    "date": "2024/02/03"
+  }
+]

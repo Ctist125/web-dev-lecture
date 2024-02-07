@@ -1,0 +1,101 @@
+html {
+  --color-gray-700: rgb(60, 60, 60);
+
+  --color-orange-400: #dda94b;
+  --color-orange-500: #c4943b;
+
+  font-family: "Nanum Myeongjo", serif;
+  color: var(--color-gray-700);
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+#header-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  font: 700 3rem "Dancing Script", cursive;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-orange-400);
+}
+
+#logo img {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  width: 6rem;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-orange-400);
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 100%;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+}
+
+nav a:hover,
+nav a:active {
+  color: white;
+  background-color: var(--color-orange-400);
+}
+
+footer {
+  border-top: 1px solid black;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  text-align: center;
+  font-weight: 700;
+}
+
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-gray-700);
+  padding: 0.5rem 1rem 0 1rem;
+  font-weight: 400;
+}
+
+footer a:hover,
+footer a:active {
+  text-decoration: underline;
+  font-weight: 700;
+}
