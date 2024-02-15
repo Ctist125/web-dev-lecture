@@ -1,0 +1,51 @@
+#information {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+#information img {
+  object-fit: cover;
+  object-position: right;
+  width: 100%;
+  height: 30rem;
+  border-radius: 1rem;
+}
+
+#information ul {
+  list-style: none;
+  padding: 0;
+}
+
+#button-list {
+  text-align: center;
+}
+
+#information button {
+  width: 10rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+#type {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  list-style: none;
+  padding: 0;
+}
+
+#contents {
+  list-style: none;
+  padding: 0;
+}
+
+#contents li {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
+
+.center {
+  text-align: center;
+}

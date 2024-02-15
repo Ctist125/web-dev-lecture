@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <%- include("includes/head") %>
+
+    <link rel="stylesheet" href="/styles/styles.css" />
+
+    <title>Shopping mall</title>
+  </head>
+
+  <body>
+    <%- include("includes/header") %>
+
+    <main>
+      <section id="best-item">
+        <h1>인기 상품</h1>
+        <div id="product">
+          <% for (const product of products) { %>
+            <div class="card">
+              <a href="/product-detail/<%= product.id %>">
+                <img src="<%= product.image_path %>" alt="<%= product.name %> image" />
+                <ul>
+                  <li>
+                    <h2><%= product.name %></h2>
+                    <p>
+                      <%= product.description %>
+                    </p>
+                  </li>
+                  <li class="price"><%= product.price %> 원</li>
+                </ul>
+              </a>
+            </div>
+          <% } %>
+        </div>
+      </section>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

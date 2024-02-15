@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <%- include("includes/head") %>
+
+    <link rel="stylesheet" href="/styles/buy.css" />
+
+    <title>장바구니</title>
+  </head>
+
+  <body>
+    <%- include("includes/header") %>
+
+    <main>
+      <form action="/buy" method="GET">
+        <h1>목록</h1>
+
+        <section id="list">
+          <ul id="type">
+            <li class="name">이름</li>
+            <li class="center">가격</li>
+            <li class="center">수량</li>
+            <li class="center">총</li>
+          </ul>
+          <ul id="product-item">
+            <% for (const list of buyLists) { %>
+              <li>
+                <p class="name"><%= list.name %></p>
+                <p class="center"><%= list.price %> 원</p>
+                <p class="center">
+                  <input type="number" name="<%= list.name_en %>" value="<%= list.count %>" min="0" required />
+                </p>
+                <p class="center"><%= list.individual_total %> 원</p>
+              </li>
+            <% } %>
+          </ul>
+        </section>
+
+        <section id="calculation">
+          <div id="cal-item">
+            <button type="submit" class="btn">확정</button>
+          </div>
+        </section>
+      </form>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

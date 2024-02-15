@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <%- include("includes/head") %>
+    <link rel="stylesheet" href="/styles/product-detail.css" />
+
+    <% for (const product of products) { %>
+      <% if (product.id == id) { %>
+        <title><%= product.name %></title>
+      <% } %>
+    <% } %>
+  </head>
+
+  <body>
+    <%- include("includes/header") %>
+
+    <main>
+      <section id="information">
+        <img src="<%= products[0].image_path %>" alt="<%= products[0].name %> image" />
+
+        <form action="/product-detail/<%= id %>" method="POST">
+          <ul>
+            <li>
+              <h1><%= products[0].name %></h1>
+            </li>
+            <li>
+              <hr />
+            </li>
+            <li>가격: <%= products[0].price %> 원</li>
+            <li>
+              <hr />
+            </li>
+            <li>
+              <label for="count">수량</label>
+              <input type="number" name="count" id="count" value="1" min="1" required />
+            </li>
+            <li>
+              <hr />
+            </li>
+            <li id="button-list">
+              <button class="btn">장바구니 담기</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+
+        <hr />
+
+      <section id="detail-information">
+        <p>
+          <%= products[0].description %>
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="reviews">
+        <ul id="type">
+          <li class="center">별점</li>
+          <li>text</li>
+        </ul>
+        <hr>
+        <ul id="contents">
+          <% for (const review of reviews) { %>
+            <% if (review.item_name == products[0].name) { %>
+              <li>
+                <p class="center"><%= review.rating %></p>
+                <p><%= review.text %></p>
+              </li>
+            <% } %>
+          <% } %>
+        </ul>
+        <hr>
+      </section>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

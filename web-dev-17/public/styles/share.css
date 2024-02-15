@@ -1,0 +1,108 @@
+html {
+  --color-gray-700: rgb(60, 60, 60);
+
+  --color-blue-200: rgb(242, 243, 255);
+  --color-blue-500: rgb(141, 148, 255);
+
+  --color-darkyellow-700: rgb(161, 163, 11);
+  --color-darkyellow-800: rgb(135, 138, 3);
+
+  font-family: "Nanum Gothic", sans-serif;
+  color: var(--color-gray-700);
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: var(--color-blue-200);
+}
+
+#header-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#header-item a {
+  color: var(--color-darkyellow-700);
+  text-decoration: none;
+}
+
+#logo {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+#header-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+#header-menu a {
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  width: 5rem;
+  padding: 0.5rem 0;
+  border-radius: 0.25rem;
+}
+
+#header-menu a:hover,
+#header-menu a:active {
+  background-color: var(--color-darkyellow-700);
+  color: white;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn {
+  cursor: pointer;
+  font: 700 1rem "Nanum Gothic", sans-serif;
+  background-color: var(--color-darkyellow-700);
+  color: white;
+  border: 1px solid var(--color-gray-700);
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--color-darkyellow-800);
+}
+
+footer {
+  border-top: 1px solid var(--color-gray-700);
+  margin-top: 2rem;
+  text-align: center;
+}
+
+footer p {
+  font-weight: 700;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  width: 10rem;
+}
+
+footer a {
+  color: var(--color-gray-700);
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:active {
+  text-decoration: underline;
+}
