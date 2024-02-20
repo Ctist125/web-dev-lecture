@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <%- include("includes/head") %>
+
+    <link rel="stylesheet" href="/styles/writing.css" />
+
+    <title>글 작성</title>
+  </head>
+
+  <body>
+    <%- include("includes/header") %>
+
+    <main>
+      <section>
+        <form action="/writing" method="POST">
+          <ul>
+            <li>
+              <input
+                type="text"
+                name="title"
+                id="title"
+                placeholder="제목"
+                required
+              />
+            </li>
+            <li>
+              <textarea
+                name="body"
+                id="body"
+                rows="20"
+                placeholder="내용"
+                required
+              ></textarea>
+            </li>
+            <li>
+              <button type="submit" class="btn">제출</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

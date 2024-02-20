@@ -1,0 +1,44 @@
+main {
+  width: 50%;
+  margin: 3rem auto;
+}
+
+main ul {
+  list-style: none;
+  padding: 0;
+}
+
+main li {
+  text-align: center;
+}
+
+input,
+textarea {
+  font-family: "Nanum Gothic", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+input {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border: 0px;
+  border-bottom: 1px solid var(--color-gray-400);
+}
+
+textarea {
+  resize: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid var(--color-gray-400);
+  border-radius: 0.5rem;
+}
+
+.btn {
+  border: 1px solid var(--color-gray-700);
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  width: 7.5rem;
+  padding: 0.5rem 0;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <%- include("includes/head") %>
+
+    <link rel="stylesheet" href="/styles/styles.css" />
+
+    <title>Community</title>
+  </head>
+
+  <body>
+    <%- include("includes/header") %>
+
+    <main>
+      <section id="weekly-popularity">
+        <h2>주간 인기 글</h2>
+
+        <ul id="weekly-posts-type">
+          <li class="center-alignment">순위</li>
+          <li>제목</li>
+          <li class="center-alignment">작성자</li>
+        </ul>
+
+        <ol id="weekly-posts">
+          <% for (const weeklyPopularityPost of weeklyPopularityPosts) { %>
+            <li>
+              <a href="/post-detail/<%= weeklyPopularityPost._id %>" class="text">
+                <p class="center-alignment"><%= weeklyPopularityPost.ranking %>.</p>
+                <p><%= weeklyPopularityPost.title %></p>
+              </a>
+              <a href="" class="center-alignment"><%= weeklyPopularityPost.writer.userName %></a>
+            </li>
+
+            <% if (weeklyPopularityPost.ranking != 5) { %>
+              <hr />
+            <% } %>
+          <% } %>
+        </ol>
+      </section>
+
+      <section id="board">
+        <div id="attendance">
+          <h2>출석</h2>
+
+          <ul>
+            <li>시간</li>
+            <li>닉네임</li>
+            <li>누적 횟수</li>
+          </ul>
+
+          <ol>
+            <% let i = 0 %>
+            <% for (const attendance of userAttendance) { %>
+              <li>
+                <p><%= attendance.time %></p>
+                <p><%= attendance.user.userName %></p>
+                <p><%= attendance.count %></p>
+              </li>
+
+              <% if (i !== 4) { %>
+                <hr />
+                <% i++ %>
+              <% } %>
+            <% } %>
+          </ol>
+        </div>
+
+        <div id="free-board">
+          <h2>자유게시판</h2>
+
+          <ul>
+            <li class="center-alignment">번호</li>
+            <li>제목</li>
+            <li class="center-alignment">작성자</li>
+          </ul>
+
+          <ol>
+            <% let num = 1 %>
+            <% if (num < 6) { %>
+              <% for (const freeBoardPost of freeBoardPosts) { %>
+                <li>
+                  <a href="" class="text">
+                    <p class="center-alignment"><%= num %>.</p>
+                    <p><%= freeBoardPost.title %></p>
+                  </a>
+                  <a href="" class="center-alignment"><%= freeBoardPost.writer.userName %></a>
+                </li>
+  
+                <% if (num < 5) { %>
+                  <hr />
+                <% } %>
+                
+                <% num++ %>
+              <% } %>
+            <% } %>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>
