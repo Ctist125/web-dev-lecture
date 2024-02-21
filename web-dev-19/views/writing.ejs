@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <%- include("includes/head") %>
+
+    <link rel="stylesheet" href="/styles/writing.css" />
+    <link rel="stylesheet" href="/styles/preview.css" />
+
+    <script src="/scripts/preview.js" defer></script>
+
+    <title>Writing</title>
+  </head>
+
+  <body>
+    <%- include("includes/header") %>
+
+    <main>
+      <section id="title">
+        <h1>사원 등록</h1>
+      </section>
+
+      <section id="form">
+        <form action="/writing" method="POST" enctype="multipart/form-data">
+          <ul>
+            <li>
+              <label for="name">이름</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="이름"
+                required
+              />
+            </li>
+            <li>
+              <label for="department">부서</label>
+              <input
+                type="text"
+                name="department"
+                id="department"
+                placeholder="ex) 기획팀"
+                required
+              />
+            </li>
+            <li>
+              <label for="class">직책</label>
+              <input
+                type="text"
+                name="class"
+                id="class"
+                placeholder="ex) 팀장"
+                required
+              />
+            </li>
+            <li>
+              <label for="decription">특징</label>
+              <textarea
+                name="description"
+                id="description"
+                rows="10"
+                placeholder="500자 이내로 입력"
+                maxlength="500"
+                required
+              ></textarea>
+            </li>
+            <li>
+              <label for="imagePath">프로필 이미지</label>
+              <input
+                type="file"
+                name="imagePath"
+                id="imagePath"
+                accept="image/jpeg"
+              />
+            </li>
+          </ul>
+          <img id="image-preview" src="" alt="image">
+          <button type="submit" class="btn">등록</button>
+        </form>
+      </section>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

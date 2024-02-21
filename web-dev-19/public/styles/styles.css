@@ -1,0 +1,27 @@
+#profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
+}
+
+.card {
+  overflow: hidden;
+  background-color: var(--color-gray-100);
+  border-radius: 2.5rem;
+  height: 35rem;
+}
+
+.card img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 50%;
+}
+
+.card h2 {
+  font-weight: 800;
+}
+
+.card strong {
+  font-weight: 700;
+}

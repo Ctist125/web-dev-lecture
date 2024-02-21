@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <%- include("includes/head") %>
+
+    <link rel="stylesheet" href="/styles/styles.css" />
+
+    <title>main</title>
+  </head>
+
+  <body>
+    <%- include("includes/header") %>
+
+    <main>
+      <section id="title">
+        <h1>직원 소개</h1>
+      </section>
+
+      <% if (!users || users.length === 0) { %>
+      <h2>정보가 존재하지 않습니다.</h2>
+      <% } else { %>
+        <section id="profile">
+          <% for (const user of users) { %>
+          <div class="card">
+            <img src="<%= user.imagePath %>" alt="Profile image" />
+
+            <article>
+              <ul>
+                <li>
+                  <h2><%= user.name %></h2>
+                </li>
+                <li><strong>부서:</strong> <%= user.department %></li>
+                <li><strong>직책:</strong> <%= user.class %></li>
+                <li><strong>특징:</strong> <%= user.description %></li>
+              </ul>
+            </article>
+          </div>
+          <% } %>
+        </section>
+      <% } %>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

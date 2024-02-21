@@ -1,0 +1,112 @@
+html {
+  --color-gray-100: rgb(226, 226, 226);
+  --color-gray-400: rgb(150, 150, 150);
+  --color-gray-500: rgb(134, 134, 134);
+  --color-gray-700: rgb(60, 60, 60);
+
+  font-family: "Nanum Gothic", sans-serif;
+  color: var(--color-gray-700);
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  border-bottom: 1px solid var(--color-gray-700);
+  font-weight: 800;
+}
+
+#header-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+}
+
+#logo {
+  text-transform: uppercase;
+  color: var(--color-gray-700);
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+#header-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#header-menu a {
+  text-decoration: none;
+  color: var(--color-gray-700);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+}
+
+#header-menu a:hover,
+#header-menu a:active {
+  background-color: var(--color-gray-400);
+  color: white;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 2rem;
+}
+
+#title {
+  text-align: center;
+}
+
+.btn {
+  cursor: pointer;
+  font: 700 1rem "Nanum Gothic", sans-serif;
+  color: white;
+  background-color: var(--color-gray-400);
+  border: 1px solid var(--color-gray-400);
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--color-gray-500);
+}
+
+footer {
+  border-top: 1px solid var(--color-gray-700);
+  margin-top: 2rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  text-align: center;
+}
+
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-gray-700);
+  width: 10rem;
+}
+
+footer a:hover,
+footer a:active {
+  text-decoration: underline;
+}
+
+#copyright {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
